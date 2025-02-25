@@ -44,12 +44,17 @@
      }
    </style>
 
-<audio id="background-audio" src="medieval.mp3" autoplay></audio>
+<audio id="background-audio" src="medieval.mp3" autoplay loop muted playsinline></audio>
+
 
 <script>
-  const audio = document.getElementById("background-audio");
-  audio.loop = true;
+  window.addEventListener("click", function () {
+    const audio = document.getElementById("background-audio");
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
 </script>
+
  </head>
 <body>
    <h1>Welcome to Spesarus!</h1>
