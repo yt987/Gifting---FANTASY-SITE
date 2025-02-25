@@ -1,9 +1,8 @@
 body {
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents tiling */
-    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
-    background-size: 100% 100%;
-    color: #f5e1c0; /* Parchment-like text */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5e1c0;
     font-family: 'Garamond', serif;
     text-align: center;
     padding-top: 10%;
@@ -32,9 +31,9 @@ p {
 button {
     font-size: 1.5rem;
     padding: 15px 30px;
-    background-color: #7a4c24; /* Deep brown medieval look */
+    background-color: #7a4c24;
     color: #f5e1c0;
-    border: 3px solid #d4af37; /* Gold border */
+    border: 3px solid #d4af37;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
@@ -47,3 +46,11 @@ button:hover {
     background-color: #8f5f35;
     transform: scale(1.1);
 }
+
+.bad-ending {
+    color: red;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  }
