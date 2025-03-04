@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <audio id="background-audio" src="medieval.mp3" autoplay loop></audio>
+
+    <script>
+      const audio = document.getElementById("background-audio");
+
+      if (localStorage.getItem("audioPlaying") === "true") {
+        audio.currentTime = localStorage.getItem("audioTime") || 0; // Restore playback position
+        audio.play().catch(() => console.log("Autoplay blocked, waiting for interaction."));
+      }
+
+      window.addEventListener("click", function () {
+        audio.play();
+        localStorage.setItem("audioPlaying", "true");
+      }, { once: true });
+
+      setInterval(() => {
+        localStorage.setItem("audioTime", audio.currentTime);
+      }, 1000);
+    </script>
+  </body>
+</html>
