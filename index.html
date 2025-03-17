@@ -24,6 +24,7 @@
        font-size: 1.5rem;
        font-weight: bold;
        margin-bottom: 20px;
+       font-weight: bold;
        text-shadow: 5px 5px 12px rgba(0, 0, 0, 0.7);
      }
 
@@ -44,36 +45,19 @@
        background-color: #8f5f35;
        transform: scale(1.1);
      }
-
-     iframe {
-       width: 100%;
-       height: 80vh;
-       border: none;
-       margin-top: 20px;
-     }
    </style>
 
-   <link rel="icon" type="image/png" href="bird.png">
+ <link rel="icon" type="image/png" href="bird.png">
+
  </head>
 <body>
+  <script src="audio.js"></script>
+  <h1>Welcome to Spesarus, Yael!</h1>
+   <button onclick="location.href='choosepath.html'">Begin Your Adventure</button>
 
-  <audio id="background-music" autoplay loop>
-      <source src="medieval.mp3" type="audio/mpeg">
-  </audio>
-
-  <h1>Welcome to Spesarus!</h1>
-  <button onclick="showIframe('choosepath.html')">Begin Your Adventure</button>
-
-  <!-- Initially hidden iframe -->
-  <iframe id="content-frame" style="display: none;"></iframe>
-  
-  <script>
-      function showIframe(page) {
-          let iframe = document.getElementById("content-frame");
-          iframe.style.display = "block"; // Show the iframe
-          iframe.src = page; // Load the correct page inside the iframe
-      }
-  </script>
-
+  <br>
+  <br>
+   <h3> Art Credits: https://jamesrpgart.com/
+   </h3>
 </body>
 </html>
